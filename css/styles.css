@@ -5,12 +5,12 @@
     font-family: "Roboto", "Open Sans", sans-serif;
 }
 
-body {
-    background: repeating-linear-gradient(37deg, #ff5722 90%, rgb(48, 47, 47)) ;
+/* body {
+    background: linear-gradient(37deg, #ff5722 90%, rgb(48, 47, 47)) ;
     color: whitesmoke;
-    height: auto;
     width: 100%;
-}
+    height: 100%;
+} */
 
 
 header {
@@ -52,6 +52,7 @@ header nav > a {
     gap: 0.2rem;
     font-size: 1.5rem;
     font-weight: 800;
+    align-items: center;
 }
 
 .name span:nth-child(1){
@@ -80,8 +81,8 @@ header nav > a {
     background-color: #dbd0ca;
     border-left: 1px solid rgb(126, 117, 117);
     border-bottom: 1px solid rgb(126, 117, 117);
-    width: 50%;
-    max-width: 10rem;
+    width: 60%;
+    max-width: 12rem;
     height: calc(100vh - 5rem);
     padding: 1.5rem 1rem;
     display:none;
@@ -122,13 +123,277 @@ gap: 0.5rem;
 .hero {
     width: 100%;
     height: 100%;
-    min-height: calc(100vh - 5rem);
     border: 1px solid rgb(103, 101, 101, 0.3);
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
     justify-content: space-around;
-    margin-top: 0.8rem;
+    
+}
+
+.hero-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.5rem;
+}
+
+.hero-intro h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.hero-intro p{
+    font-size: 0.5rem;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+.hero-intro > a {
+    background-color: #575553;
+    color: #f0e8e5;
+    padding: 0.5rem;
+    border-radius: 10px;
+    align-self: flex-start;
+    transition: transform  0.3s ease-in-out;
+    font-size: 0.5rem;
+
+}
+
+.hero-intro > a:hover{
+    color: #d8471a;
+    transform: translateX(2px);
+}
+
+.hero-icon{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    gap: 2rem;
+}
+
+.icon a{
+    color: rgb(52, 96, 123);
+    background-color: whitesmoke;
+    align-self: flex-start; 
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 15px;
+}
+
+.icon a :hover {
+    color: rgb(73, 166, 224) ;
+    font-size: 2rem;
+}
+
+.hero img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 2rem;
+    object-fit: cover;
+}
+
+            /* About section*/
+.about{
+    width: 100%;
+    height: 100%;
+    margin: 0.95rem 0;
+    border: 1px solid rgb(136, 133, 133, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0.95rem 0;
+
+}
+
+.about-intro h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-intro img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-intro a {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #575553;
+    color: #f0e8e5;
+    border-radius: 10px;
+    transition: transform  0.3s ease-in-out;
+    font-size: 1rem;
+
+}
+
+.about-intro a:hover{
+    color: #d8471a;
+    transform: translateX(2px);
+}
+
+/* skills section */
+
+
+
+
+@media (min-width: 768px){
+
+.hero {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(103, 101, 101, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.hero-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem ;
+    font-size: 1.5rem;
+}
+
+.hero-intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.hero-intro p{
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+.hero-intro > a {
+    background-color: #575553;
+    color: #f0e8e5;
+    padding: 1rem 0.9rem;
+    border-radius: 10px;
+    align-self: flex-start;
+    transition: transform  0.3s ease-in-out;
+    font-size: 1rem;
+
+}
+
+.hero-intro > a:hover{
+    color: #d8471a;
+    transform: translateX(2px);
+}
+
+.hero-icon{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    gap: 2rem;
+}
+
+.icon a{
+    color: rgb(52, 96, 123);
+    background-color: whitesmoke;
+    align-self: flex-start; 
+    padding: 0.5rem;
+    border-radius: 15px;
+    font-size: 0.95rem;
+}
+
+.icon a :hover {
+    color: rgb(73, 166, 224) ;
+    font-size: 2rem;
+}
+
+.hero img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    padding: 2rem;
+    object-fit: cover;
+}
+
+
+}
+
+/* for bigger screen  */
+@media (min-width: 1024px){
+
+    /* hide mobile lin */
+    .mobile {
+        display: none;
+    }
+
+
+    /* show desktop nav links*/
+header nav > a {
+    display: inline-block;
+}
+
+header .desktop{
+    display: flex;
+    gap: 3rem;
+}
+
+/* desktop nav links */
+.desktop li > a {
+    color: #f0e8e5;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: filter 0.3s ease-in-out;
+}
+
+.desktop li > a:hover{
+    color: #d8471a;
+    font-size: 1rem;
+    filter: brightness(100%);
+
+}
+
+/* desktop direct anchor tag style */
+.chat {
+    background-color: #3c3a39;
+    color: #f0e8e5;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.chat span {
+    color: rgb(28, 121, 28);
+}
+
+.chat:hover{
+    background-color: #aaa7a5;
+    color: #d8471a;
+    transform: translateY(2px);
+    
+}
+
+/* hero section */
+.hero {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(103, 101, 101, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .hero-intro{
@@ -245,76 +510,6 @@ gap: 0.5rem;
 .about-intro a:hover{
     color: #d8471a;
     transform: translateX(2px);
-}
-
-            /* skills section */
-
-
-
-@media (min-width: 768px){
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .hero {
-        min-height: 60vh;
-    }
-
-}
-
-/* for bigger screen  */
-@media (min-width: 1024px){
-
-    /* hide mobile lin */
-    .mobile {
-        display: none;
-    }
-
-
-    /* show desktop nav links*/
-header nav > a {
-    display: inline-block;
-}
-
-header .desktop{
-    display: flex;
-    gap: 3rem;
-}
-
-/* desktop nav links */
-.desktop li > a {
-    color: #f0e8e5;
-    font-size: 0.8rem;
-    font-weight: 500;
-    transition: filter 0.3s ease-in-out;
-}
-
-.desktop li > a:hover{
-    color: #d8471a;
-    font-size: 1rem;
-    filter: brightness(100%);
-
-}
-
-/* desktop direct anchor tag style */
-.chat {
-    background-color: #3c3a39;
-    color: #f0e8e5;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.chat span {
-    color: rgb(28, 121, 28);
-}
-
-.chat:hover{
-    background-color: #aaa7a5;
-    color: #d8471a;
-    transform: translateY(2px);
-    
 }
 
 }
