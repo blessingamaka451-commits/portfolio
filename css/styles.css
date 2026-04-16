@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", "Open Sans", sans-serif;
+    overflow: hidden;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
     color: rgb(230, 212, 208);
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -326,7 +327,28 @@ gap: 0.5rem;
     border: 1px solid gray;
     border-radius: 15px;
     font-size: 02rem;
+    transition: transform 0.3d ease-in-out;
 }
+
+.skills-content article h3{
+    font-size: 1.9rem;
+}
+
+.skills-content article p{
+    font-size: 1rem;
+}
+
+.skills-content article a{
+    font-size: 1.2rem;
+}
+
+.skills-content article:hover{
+    background-color: rgb(230, 212, 208);
+    color: indigo;
+    transform: scaleX(1.1);
+    filter: brightness(70%);
+}
+
 
 
 
@@ -373,14 +395,17 @@ gap: 0.5rem;
     margin: 0 3rem;
 }
 
+.skills-content article h3{
+    font-size: 1.9rem;
+}
+
 .skills-content article p{
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
 }
 
 
-
-
-}
 
 /* for bigger screen  */
 @media (min-width: 1024px){
@@ -476,6 +501,16 @@ header .desktop{
 
 .about-content {
     grid-template-columns: 1fr 2fr;
+}
+
+
+/* SKILLS SECTION */
+.skills-content {
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: repeat(2, 150px);
+    column-gap: 4rem;
+    row-gap: 3rem;
+    margin: 0 5rem;
 }
 
 
