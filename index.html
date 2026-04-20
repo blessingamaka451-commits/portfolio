@@ -24,7 +24,7 @@
 <body>
     <header>
         <nav>
-            <div class="name">
+            <div class="title">
                 <span>NBC</span>
                 <span>PORTFOLIO</span>
                 
@@ -247,57 +247,70 @@
                 <p>Feel free to reach out by filling the form below</p>
             </div>
 
-            <form>
-                <div class="name">
-                    <div>
-                        <label for="firstname">First-Name</label>
-                        <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name">
+            <div class="grid">
+
+                <!-- contact form -->
+                <form>
+                    <div class="name">
+                        <div>
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name" required>
+                        </div>
+
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name">
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="lastname">Last-Name</label>
-                        <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name">
+                    <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="@gmail.com" required>
+                        </div>
+
+
+                    <div class="message">
+                        <label for="message">Comment</label>
+                        <textarea name="message" id="message" rows="10" placeholder="Comment Here ...."></textarea>
                     </div>
-                </div>
 
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="@gmail.com">
-                </div>
-
-                <div class="message">
-                    <label for="message">Comment</label>
-                    <textarea name="message" id="message" rows="10" placeholder="Comment Here ...."></textarea>
-                </div>
-
-                <button type="submit">
-                    Submit
-                </button>
-            </form>
-            <div class="socials">
-                <div>
-                    <a href="https://github.com/blessingamaka451-commits">GITHUB</a>
-                    <span><i class="fa-brands fa-square-github"></i></span>
-                </div>
-
-                <div>
-                    <a href="http://www.linkedin.com/in/blessing-nwagbara-8aa4082a1">Linkedin</a>
-                    <span><i class="fa-brands fa-linkedin"></i></span>
-                </div>
-
-                <div>
-                    <a href="https://x.com/BlessingAm5439">Twitter</a>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                </div>
+                    <button type="submit">Submit</button>
+                </form>
                 
+                <!-- contact info -->
+                <div class="social-title">
+
+                    <div class="social-intro">
+                        <h2>Get In Touch</h2>
+                        <p>You can reach out to me via the following social media handle.</p>
+                    </div>
+
+                    <div class="socials">
+
+                        <div>
+                            <a href="mailto:blessingamaka451@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>E-mail
+                        </div>
+
+                        <div>
+                            <a href="tel:+2348133166757" target="_blank"><i class="fa-solid fa-phone"></i></a>+234 8133 166 757
+                        </div>
+
+                        <div>
+                            <a href="FGF3+7XW, Trans-Ekulu, Enugu 400103, Enugu" target="_blank">
+                                <i class="fa-solid fa-location-dot"></i></a>Enugu,Nigeria/Remotely.
+                        </div>
+
+
+                        <div>
+                            <a href="https://github.com/blessingamaka451-commits" target="_blank">
+                                <i class="fa-brands fa-square-github"></i></a>Github
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
     </main>
-
-
-
-
-
 
 
     <footer>
@@ -305,8 +318,7 @@
 
             <p>&copy; 2026 Nwagbara Blessing Chiamaka. All Rights Reserved.</p>
 
-        <div class="footer-socials">
-            <div class="social-icons">
+            <div class="footer-socials">
                 <a href="https://www.facebook.com/brown.dido.1"><i class="fa-brands fa-facebook"></i></a>
 
                 <a href="https://x.com/BlessingAm5439"><i class="fa-brands fa-twitter"></i></a>
@@ -315,7 +327,7 @@
 
                 <a href="https://www.instagram.com/selebing4/"><i class="fa-brands fa-square-instagram"></i></a>
             
-        </div>
+            </div> 
 
         </div>
     </footer>

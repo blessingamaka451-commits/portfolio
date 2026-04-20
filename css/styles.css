@@ -50,7 +50,7 @@ header nav > a {
 }
 
 /* LOGO AND NAME SECTION */
-.name{
+.title{
     display: flex;
     gap: 0.2rem;
     font-size: 1.5rem;
@@ -58,7 +58,7 @@ header nav > a {
     align-items: center;
 }
 
-.name span:nth-child(1){
+.title span:nth-child(1){
     background-color: #5a154e;
     color: #c733af;
     width: 4rem;
@@ -69,7 +69,7 @@ header nav > a {
     border-radius: 50%;
 }
 
-.name span:nth-child(2){
+.title span:nth-child(2){
     color: rgb(230, 212, 208);
     display: flex;
     justify-content: center;
@@ -429,24 +429,193 @@ gap: 0.5rem;
 }
 
 
-/* CONTACT SECTION */
+/* CONTACT SECTION FOR MOBILE */
 #contact {
     background-color: #16081b;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 0.95rem 0;
+    gap: 1rem;
+    padding: 0.5rem 0;
 }
 
 .contact-intro{
-    
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-intro h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact-intro p {
+    font-size: 0.7rem;
+    text-align: center;
+    width: 90%;
+}
+
+/* contact form */
+.grid form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 90%;
+    max-width: 45rem;
+    background-color:#5f0b47;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+    margin: 0 auto;
+    border-radius: 15px;
+    outline: 0;
+}
+/* labels */
+.name > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.name {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.7rem;
+}
+
+.grid div input {
+    height: 2rem;
+    border-radius: 5px;
+    outline: 0;
+    padding: 0 0.3rem;   
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.message textarea{
+    height:5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.grid button {
+    background-color:  #230a2c;
+    color: #f0e8e5;
+    align-items: flex-start;
+    padding: 0.9rem 3rem;
+    border-radius: 5px;
+    outline: 0;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.grid button:hover {
+    transform: scale(1);
+    background-color: #f0e8e5;
+    color: #5f0b47;
+}
+
+.social-title{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.95rem;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.social-intro h2 {
+    border-bottom: 3px solid ;
+}
+
+.social-intro p {
+    font-size: 0.9rem;
+}
+
+.socials  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials div {
+    font-size: 1rem;
+
+}
+
+.socials a {
+    text-decoration: none;
+    color: #2c0332;
+    font-size: 2rem;
+}
+
+.socials a:hover{
+    transform: scale(1.3);
+    background-color: #800c5f;  
+    color: #f0e8e5;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+/* FOOTER SECTION FOR MOBILE SCREEN */
+footer {
+    background-color: #2c0332;
+    padding: 5rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-socials{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-socials a{
+    text-decoration: none;
+    color: #e4dae1;
+    font-size: 1.5rem;
+}
+
+.footer-socials > a:hover{
+    transform: rotate(20deg);
+    font-size: 2.5rem;
 }
 
 
+
+
+
+
+
+
+
+
 @media (min-width: 768px){
-/* hero section */
+/* hero section FOR LARGER SCREEN*/
 .hero-intro h1 {
     font-size: 3rem;
 }
@@ -461,7 +630,10 @@ gap: 0.5rem;
     height: 500px;
 }
 
-/* about section */
+/* ABOUT SECTION  FOR LARGER SCREEN*/
+.about-intro p {
+    font-size: 1.3rem;
+}
 .about-content{
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -477,6 +649,10 @@ gap: 0.5rem;
 .about-content p{
     font-size: 1.3rem;
     letter-spacing: 5;
+}
+/* SKILLS SECTION FOR LARGER SCREEN */
+.skills-intro P {
+    font-size: 1.3rem;
 }
 
 .skills-content {
@@ -495,8 +671,8 @@ gap: 0.5rem;
     font-size: 1rem;
 }
 
+/* PROJECT SECTION FOR LARGER SCREEN */
 .project-content{
-    
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: 3rem;
@@ -508,14 +684,42 @@ gap: 0.5rem;
 }
 
 .project-intro p {
-    font-size: 0.95rem;  
+    font-size: 1.3rem;  
+}
+
+/* CONTACT SECTION FOR LARGER SCREEN */
+.contact-intro p {
+    font-size: 1.3rem;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr ;
+    padding: 1rem;
+}
+
+
+.social-title {
+    display: flex;
+    flex-direction: column;
+    background-color:#5f0b47;
+    border-radius: 15px;
+    outline: 0;
+    padding: 0 1rem;
+}
+
+.social-intro p {
+    font-size: 0.9rem;
+}
+/* FOOTER FOR LARGER SCREEN */
+footer{
+    font-size: 1.3rem;
 }
 
 }
 
 
-
-/* for bigger screen  */
+/* FOR LARGER SCREEN  */
 @media (min-width: 1024px){
 
     /* hide mobile lin */
@@ -570,7 +774,7 @@ header .desktop{
     transform: translateY(2px);
 }
 
-/* hero section */
+/* HERO SECTION FOR LARGER SCREEN */
 .hero-intro{
     gap: 3rem;
     padding: 2rem 1rem ;
@@ -605,14 +809,14 @@ header .desktop{
     height: 600px;
 }
 
-/* About section */
+/* ABOUT SECTION FOR LARGER SCREEN */
 
 .about-content {
     grid-template-columns: 1fr 2fr;
 }
 
 
-/* SKILLS SECTION */
+/* SKILLS SECTION FOR LARGER SCREEN*/
 .skills-content {
     grid-template-columns: repeat(4, 2fr);
     grid-template-rows: repeat(2, 150px);
@@ -621,7 +825,10 @@ header .desktop{
     margin: 0 5rem;
 }
 
-
+/* INCREASE FONT SIZE  */
+.social-intro p {
+    font-size: 1.4rem;
+}
 }
 
 @media (min-width:1500px){
