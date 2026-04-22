@@ -102,19 +102,19 @@ header nav > a {
 }
 
 .mobile-dropdown li:nth-child(6) {
-background-color: #5f0b47;
+    background-color: #5f0b47;
     color: #f0e8e5;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 10px;
-width: 8rem;
-height: 2rem;
-font-size: 0.8rem;
-gap: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    gap: 0.5rem;
 }
 
-.mobile button{
+.mobile a{
     background-color: rgb(230, 212, 208);
     font-size: 1.8rem;
     border-radius: 10px;
@@ -140,19 +140,19 @@ gap: 0.5rem;
 .hero-intro{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 0.5rem 0.9rem;
     font-size: 0.5rem;
 }
 
 .hero-intro h1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
     font-family: "Montserrat";
 }
 
 .hero-intro p{
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family: "Roboto";
 }
@@ -727,7 +727,6 @@ footer{
         display: none;
     }
 
-
     /* show desktop nav links*/
 header nav > a {
     display: inline-block;
@@ -748,8 +747,8 @@ header .desktop{
 
 .desktop li > a:hover{
     color: whitesmoke;
-    text-decoration: underline;
-    text-decoration-color: #ec36b8;;
+    text-decoration: underline 0.2rem;
+    text-decoration-color: #c733af;
     font-size: 1rem;
     filter: brightness(100%);
 
