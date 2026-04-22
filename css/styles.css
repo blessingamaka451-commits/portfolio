@@ -486,7 +486,7 @@ header nav > a {
     gap: 0.7rem;
 }
 
-.grid div input {
+.contact-content div input {
     height: 2rem;
     border-radius: 5px;
     outline: 0;
@@ -505,7 +505,7 @@ header nav > a {
     border-radius: 5px;
 }
 
-.grid button {
+.contact-content button {
     background-color:  #230a2c;
     color: #f0e8e5;
     align-items: flex-start;
@@ -516,7 +516,7 @@ header nav > a {
 
 }
 
-.grid button:hover {
+.contact-content button:hover {
     transform: scale(1);
     background-color: #f0e8e5;
     color: #5f0b47;
@@ -695,7 +695,7 @@ footer {
 .contact-intro p {
     font-size: 1.3rem;
 }
-.grid {
+.contact-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr ;
