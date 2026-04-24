@@ -412,6 +412,10 @@ header nav > a {
     transition: transform 0.3s ease-in-out;
 }
 
+.project-content img:hover{
+    transform: scale(1.2);
+}
+
 
 .project-content article > a {
     background-color: #5f0b47;
